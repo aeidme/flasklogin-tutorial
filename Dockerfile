@@ -23,8 +23,8 @@ COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 
 #Install Node.js
-RUN curl -sL https://deb.nodesource.com/setup_14.x | bash - \
-    apt-get install -y nodejs
+RUN curl -sL https://deb.nodesource.com/setup_14.x | bash -
+RUN apt-get install -y nodejs
 
 #Install NPM
 RUN curl -L https://npmjs.org/install.sh | sh
