@@ -23,11 +23,8 @@ COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 
 #Install Node.js
-RUN git clone https://github.com/nodejs/node.git && \
-    cd node && \
-    ./configure && \
-    make && \
-    make install
+RUN curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash - \
+    sudo apt-get install -y nodejs
 
 #Install NPM
 RUN curl -L https://npmjs.org/install.sh | sudo sh
