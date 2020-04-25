@@ -1,0 +1,24 @@
+steps:
+    # Step 1
+    - name: 'gcr.io/cloud-builders/git'
+      args:
+        - clone
+        - https://github.com/aeidme/flasklogin-tutorial
+    # Step 2
+    - name: 'gcr.io/cloud-builders/docker'
+      args:
+        - build
+        # Step 3
+        - '--tag=gcr.io/$PROJECT_ID/${_IMAGE_NAME}'
+        - '.'
+      dir: flasklogin-tutorial
+    # Step 4
+    - name: 'gcr.io/cloud-builders/docker'
+      args:
+        - push
+        - 'gcr.io/$PROJECT_ID/${_IMAGE_NAME}'
+substitutions:
+    _IMAGE_NAME: flask-demo
+images:
+    - 'gcr.io/$PROJECT_ID/${_IMAGE_NAME}'
+timeout: '1200s'

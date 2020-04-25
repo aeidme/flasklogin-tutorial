@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 export GOOGLE_APPLICATION_CREDENTIALS='key.json'
 export FLASK_APP=wsgi.py
+export FLASK_ENV=development
 export FLASK_DEBUG=1
 export APP_CONFIG_FILE=config.py
 wget https://dl.google.com/cloudsql/cloud_sql_proxy.linux.amd64 -O cloud_sql_proxy
