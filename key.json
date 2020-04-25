@@ -1,0 +1,13 @@
+{
+    "type": "service_account",
+    "project_id": "fourth-flag-270813",
+    "private_key_id": "486a5aeec82e0a4a037feeb13df6c0fc101ab65c",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDZV7Xc4lNveEny\nvHUro5PxMwQVV/PM5jpmu3wpBBCerenWyPErJext7/DFB75UqugQ9U5J8wh6pCZ/\nOA7fgr6HsDlzMoMGQJKSJMOgUDnuV8pjNB/lMkifyzfN2rdVFDaNHZmrC0Yqnrs7\nyAcDnu21tiSKLmXNnb+cn0iZcHGSgiesJFWuiW2eot4p0Emqb/2HupCcWKBU228k\nXbKuVyBKYi4u506oDrqxrQfTOyBP+gZSGk/KLhPlSxd21A1QqtZzV8fcCp9xmWyV\nHpFG2ck9R8P8htNVpx2DSW4RowUXMcu0PcKDHbO3ospD76+PPKD/MLYioxzP9dM8\ngdVl3VDVAgMBAAECggEAJZ+yYs9nJCfNnVCUc/54MMvlDBDSqoi8WWZhQvRqMB3p\nGf5lCVQiTpG3u1Pw1dVUIQNmDxUcRaa+50z7/iMy+mg+ObvnxKBO/y+QEeNxc9oM\ntgmi79k5izfxrBgNnpPGMb2LCXoFJoGd5eZlmHHdspQaVTVc+DAzqFhGiBFYB8Vg\nj26/AUfBKam9mPFx4r+/wC+55BICK+t3aJnphkyulPNKgNIRt6PpLVjkG2RG1lKZ\n20aKxHA+KTvBfCB8ktdyQHUqalPSE/NLTfPN4NKJCvVV+QBUEwd9QSoxIBs6W8BR\nqCNbynmi6WqWmhBXzfdfJRcbmGpNQb8nEHKlH0P/zQKBgQDtnJGHqLQkfM2a43ac\noHxU9ZMemrdW2gqaNtz7aHaSmWB66T24kgB06uS9wPQqjishyiuD3KIn1Jr8lkzy\n17Ou+bf8Mi1HfGdOL6b9gJKKTJ9LhSEB3herpGX87OfX1ZjktQE9lbrmqS9KDzVq\ntbseHyNJwnPNZyJoWvWa9oozowKBgQDqKZWAsSEpaz08iPYT7lFh2ogoPvbHxxf4\nyDIS8yYxF8sJoDm4KnaBI6LGq0Jfxsj/ytQ8kqeM/PIGEyRGgxL5iO+5Qw2Z2k/9\nMppmHIMueqJygGq8Vo69J8NqaZGrU9CED8x8T6tiRxP7k6MkjVhT3KOw2UVdFTDR\nfj7oXjHxJwKBgBswPirCsBI4waIGgwz7BB8IlpP66h2jB3GL849E7cRqjnKh+7EB\n69F1C0V3Lbks2VydcIs/FMLv/egHHrju252a72WJLEswvfVhWH9LVflDOTr/+b3n\n9tdqEU12ojS9OSh6WbD9UAySsVmNEfSq5MVWlMgc2vlW4sYEGnRn33p3AoGACBUD\nWfvDH0DaTjqT88AoAu6eAHWb4u1WQHn4cHr/+HXPxjdHhrnAeViXh6/ljJS530pK\n5QRS0CTy3Y7Pk7d2cjJtw8EyuPq2BBE5Dwkw5evJq5YPGQ0LxC+ZKRUXuAgejFBX\nSHsfeTbm06oW2W4ffFWDONlm8X2Hv9NRrIeDxcUCgYAQ9hPhkdyH1W7npWTQYvPf\nu689+WN7XAYwfzg4fD4wQjObsfwnQS7FMFIrjpxD/gFDGTQlkinGcE8WHehHKPDM\nI5Fxe2Zv0EwgdQ1BHxX1ewQRQSQio0qO/vc6lnsm+geFJAmPXSWMZI1pPikOxQ/a\nw1z96C4WDUhz92WezRZS6A==\n-----END PRIVATE KEY-----\n",
+    "client_email": "attendance-db@fourth-flag-270813.iam.gserviceaccount.com",
+    "client_id": "104284527712645199328",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/attendance-db%40fourth-flag-270813.iam.gserviceaccount.com"
+  }
+  
