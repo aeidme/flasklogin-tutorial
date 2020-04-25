@@ -23,11 +23,11 @@ COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 
 #Install Node.js
-RUN curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash - \
-    sudo apt-get install -y nodejs
+RUN curl -sL https://deb.nodesource.com/setup_14.x | bash - \
+    apt-get install -y nodejs
 
 #Install NPM
-RUN curl -L https://npmjs.org/install.sh | sudo sh
+RUN curl -L https://npmjs.org/install.sh | sh
 
 #Install Less.js
 RUN npm install -g less
