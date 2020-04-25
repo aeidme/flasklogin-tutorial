@@ -1,5 +1,6 @@
 """App configuration."""
 from os import environ
+import os
 
 
 class Config:
@@ -21,5 +22,30 @@ class Config:
     COMPRESSOR_DEBUG = environ.get('COMPRESSOR_DEBUG')
 
     # Flask-SQLAlchemy
-    SQLALCHEMY_DATABASE_URI = environ.get('SQLALCHEMY_DATABASE_URI')
-    SQLALCHEMY_TRACK_MODIFICATIONS = environ.get('SQLALCHEMY_TRACK_MODIFICATIONS')
+    #SQLALCHEMY_DATABASE_URI = environ.get('SQLALCHEMY_DATABASE_URI')
+    SQLALCHEMY_TRACK_MODIFICATIONS = False
+    
+    # GCP
+    GOOGLE_APPLICATION_CREDENTIALS = 'key.json'
+    CLOUDSQL_USER = 'mainuser'
+    CLOUDSQL_PASSWORD = 'test123'
+    CLOUDSQL_DATABASE = 'app_db'
+    CLOUDSQL_CONNECTION_NAME = 'fourth-flag-270813:us-central1:attendance-database'
+    LOCAL_SQLALCHEMY_DATABASE_URI = (
+        'mysql+pymysql://{nam}:{pas}@127.0.0.1:3306/{dbn}').format (
+        nam=CLOUDSQL_USER,
+        pas=CLOUDSQL_PASSWORD,
+        dbn=CLOUDSQL_DATABASE,
+    )
+
+    LIVE_SQLALCHEMY_DATABASE_URI = (
+        'mysql+pymysql://{nam}:{pas}@localhost/{dbn}?unix_socket=/cloudsql/{con}').format (
+        nam=CLOUDSQL_USER,
+        pas=CLOUDSQL_PASSWORD,
+        dbn=CLOUDSQL_DATABASE,
+        con=CLOUDSQL_CONNECTION_NAME,
+    )
+    if os.environ.get ('GAE_INSTANCE'):
+        SQLALCHEMY_DATABASE_URI = LIVE_SQLALCHEMY_DATABASE_URI
+    else:
+        SQLALCHEMY_DATABASE_URI = LOCAL_SQLALCHEMY_DATABASE_URI
